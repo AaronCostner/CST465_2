@@ -13,5 +13,10 @@ namespace CST465_AC_Lab_2
         {
 
         }
+
+        protected void uxSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
