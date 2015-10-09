@@ -15,7 +15,7 @@
             <br />
 
             <asp:Label AssociatedControlID="uxUserType" runat="server">User Type</asp:Label>
-            <asp:DropDownList ID="uxUserType" runat="server">
+            <asp:DropDownList ID="uxUserType" AutoPostBack="true" runat="server">
                 <asp:ListItem>Student</asp:ListItem>
                 <asp:ListItem>Faculty/Staff</asp:ListItem>
             </asp:DropDownList>
@@ -77,6 +77,12 @@
             <asp:Button ID="uxSubmit" Text="Save Profile" OnClick="uxSubmit_Click" runat="server" />
 
             <br />
+
+            <asp:Literal ID="uxlsPostBack" runat="server"></asp:Literal>
+            <asp:Literal ID="uxFormOutput" runat="server"></asp:Literal>
+            <asp:Literal ID="uxEventOutput" runat="server"></asp:Literal>
+
+
         </div>
     </form>
 </body>
