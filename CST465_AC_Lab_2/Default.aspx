@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         <div>
             <asp:Label AssociatedControlID="uxName" runat="server">Name</asp:Label>
-            <asp:TextBox ID="uxName" TextMode="MultiLine" BackColor="YellowGreen" ReadOnly="true" runat="server">Aaron Costner</asp:TextBox>
+            <asp:TextBox ID="uxName" TextMode="MultiLine" BackColor="YellowGreen" runat="server">Aaron Costner</asp:TextBox>
 
             <br />
 
@@ -23,17 +23,17 @@
             <br />
 
             <asp:Label AssociatedControlID="uxHobby" runat="server">Hobby</asp:Label>
-            <asp:TextBox ID="uxHobby" TextMode="MultiLine" ReadOnly="true" Height="200px" Width="200px" runat="server">My hobbies include playing video games such as Dota 2, Metal Gear Solid, and Super Smash Brothers.  I also enjoy collecting rocks.</asp:TextBox>
+            <asp:TextBox ID="uxHobby" TextMode="MultiLine" Height="200px" Width="200px" runat="server">My hobbies include playing video games such as Dota 2, Metal Gear Solid, and Super Smash Brothers.  I also enjoy collecting rocks.</asp:TextBox>
 
             <br />
 
             <asp:Label AssociatedControlID="uxBand" runat="server">Band</asp:Label>
-            <asp:TextBox ID="uxBand" TextMode="MultiLine" ReadOnly="true" Height="200px" Width="200 px" runat="server">I like to listen to bands like Foreigner, Journey, Kenny Loggins, and many other 80s bands.</asp:TextBox>
+            <asp:TextBox ID="uxBand" TextMode="MultiLine" Height="200px" Width="200 px" runat="server">I like to listen to bands like Foreigner, Journey, Kenny Loggins, and many other 80s bands.</asp:TextBox>
 
             <br />
 
             <asp:Label AssociatedControlID="uxBiography" runat="server">Biography</asp:Label>
-            <asp:TextBox ID="uxBiography" Text="My biography" ReadOnly="true" runat="server" />
+            <asp:TextBox ID="uxBiography" Text="My biography" runat="server" />
 
             <br />
 
@@ -45,29 +45,59 @@
                     <asp:TableHeaderCell ID="uxCourseDescription" runat="server">Course Description</asp:TableHeaderCell>
                 </asp:TableHeaderRow>
                 <asp:TableRow>
-                    <asp:TableCell>CST</asp:TableCell>
-                    <asp:TableCell>465</asp:TableCell>
-                    <asp:TableCell>Web Development with ASP.NET</asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR1C1" runat="server"></asp:TextBox>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR1C2" runat="server"></asp:TextBox>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR1C3" runat="server"></asp:TextBox>
+                    </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow>
-                    <asp:TableCell>CST</asp:TableCell>
-                    <asp:TableCell>412</asp:TableCell>
-                    <asp:TableCell>Senior Project</asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR2C1" runat="server"></asp:TextBox>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR2C2" runat="server"></asp:TextBox>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR2C3" runat="server"></asp:TextBox>
+                    </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow>
-                    <asp:TableCell>CST</asp:TableCell>
-                    <asp:TableCell>415</asp:TableCell>
-                    <asp:TableCell>Networking</asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR3C1" runat="server"></asp:TextBox>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR3C2" runat="server"></asp:TextBox>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR3C3" runat="server"></asp:TextBox>
+                    </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow>
-                    <asp:TableCell>MATH</asp:TableCell>
-                    <asp:TableCell>421</asp:TableCell>
-                    <asp:TableCell>Applied Partial Differential Equations</asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR4C1" runat="server"></asp:TextBox>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR4C2" runat="server"></asp:TextBox>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR4C3" runat="server"></asp:TextBox>
+                    </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow>
-                    <asp:TableCell>BUS</asp:TableCell>
-                    <asp:TableCell>304</asp:TableCell>
-                    <asp:TableCell>Engineering Management</asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR5C1" runat="server"></asp:TextBox>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR5C2" runat="server"></asp:TextBox>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:TextBox ID="uxR5C3" runat="server"></asp:TextBox>
+                    </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>
 
