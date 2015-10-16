@@ -211,6 +211,15 @@ namespace CST465_AC_Lab_2 {
         protected global::System.Web.UI.WebControls.FileUpload v1ProfileImage;
         
         /// <summary>
+        /// valProfileImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator valProfileImage;
+        
+        /// <summary>
         /// v1SaveButton control.
         /// </summary>
         /// <remarks>
@@ -317,5 +326,14 @@ namespace CST465_AC_Lab_2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label v2ZipCode;
+        
+        /// <summary>
+        /// uxImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image uxImage;
     }
 }

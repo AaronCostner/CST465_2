@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.IO;
 
 namespace CST465_AC_Lab_2
 {
@@ -28,6 +29,37 @@ namespace CST465_AC_Lab_2
                 v2City.Text = "City: " + v1City.Text;
                 v2State.Text = "State: " + v1State.Text;
                 v2ZipCode.Text = "Zip Code: " + v1ZipCode.Text;
+
+                if (v1ProfileImage.HasFile)
+                {
+                    string base64String = null;
+                    byte[] buffer = new byte[v1ProfileImage.PostedFile.ContentLength];
+                    v1ProfileImage.PostedFile.InputStream.Read(buffer, 0, v1ProfileImage.PostedFile.ContentLength);
+                    using (MemoryStream m = new MemoryStream(buffer))
+                    {
+                        byte[] imageBytes = m.ToArray();
+                        // Convert byte[] to Base64 String                    
+                        base64String = Convert.ToBase64String(imageBytes);
+                    }
+                    if (!string.IsNullOrEmpty(base64String))
+                    {
+                        uxImage.ImageUrl = "data:image/jpeg;base64," + base64String;
+                    }
+                }
+            }
+        }
+
+        protected void valProfileImage_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            String path = Path.GetExtension(args.Value);
+
+            if ( path != ".jpg" && path != ".gif" && path != ".png")
+            {
+                args.IsValid = false;
+            }
+            else
+            {
+                args.IsValid = true;
             }
         }
     }
