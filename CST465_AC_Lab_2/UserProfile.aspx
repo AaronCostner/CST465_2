@@ -22,6 +22,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h1>Edit Profile</h1>
+
             <asp:MultiView ID="uxMultiView" ActiveViewIndex="0" runat="server">
                 <asp:View ID="uxView1" runat="server">
                     View 1
