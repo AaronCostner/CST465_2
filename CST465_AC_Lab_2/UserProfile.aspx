@@ -117,26 +117,33 @@
                     View 2
 
                     <br />
-                    <strong>
+                    <strong>First Name</strong>
                         <asp:Label ID="v2FirstName" runat="server" ReadOnly="true"></asp:Label>
                         <br />
+                    <strong>Last Name</strong>
                         <asp:Label ID="v2Lastname" runat="server" ReadOnly="true"></asp:Label>
                         <br />
+                    <strong>Age</strong>
                         <asp:Label ID="v2Age" runat="server" ReadOnly="true"></asp:Label>
                         <br />
+                    <strong>Phone Number</strong>
                         <asp:Label ID="v2PhoneNumber" runat="server" ReadOnly="true"></asp:Label>
                         <br />
+                    <strong>Email Address</strong>
                         <asp:Label ID="v2Email" runat="server" ReadOnly="true"></asp:Label>
                         <br />
+                    <strong>Street Address</strong>
                         <asp:Label ID="v2StreetAddress" runat="server" ReadOnly="true"></asp:Label>
                         <br />
+                    <strong>City</strong>
                         <asp:Label ID="v2City" runat="server" ReadOnly="true"></asp:Label>
                         <br />
+                    <strong>State</strong>
                         <asp:Label ID="v2State" runat="server" ReadOnly="true"></asp:Label>
                         <br />
+                    <strong>Zip Code</strong>
                         <asp:Label ID="v2ZipCode" runat="server" ReadOnly="true"></asp:Label>
                         <br />
-                    </strong>
 
                     <asp:Image ID="uxImage" runat="server" />
                 </asp:View>
