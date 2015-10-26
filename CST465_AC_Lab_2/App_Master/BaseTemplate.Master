@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BaseTemplate.master.cs" Inherits="CST465_AC_Lab_2.BaseTemplate" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Boardom</title>
+    <asp:ContentPlaceHolder ID="Stylesheets" runat="server">
+        <link rel="stylesheet" href="../css/DefaultStyles.css" type="text/css" />
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="baseForm" runat="server">
+        <div>
+            <header>
+                <asp:ContentPlaceHolder ID="HeaderContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </header>
+
+            <h1>Boardom</h1>
+
+            <nav>
+                <asp:ContentPlaceHolder ID="NavContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </nav>
+
+            <main>
+                <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+
+            <asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer>
+                <asp:ContentPlaceHolder ID="FooterContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
