@@ -69,6 +69,7 @@
     <Content Include="404Error.aspx" />
     <Content Include="500Error.aspx" />
     <Content Include="css\DefaultStyles.css" />
+    <Content Include="EssayQuestion.ascx" />
     <Content Include="packages.config" />
     <Content Include="App_Master\BaseTemplate.Master" />
     <None Include="Web.Debug.config">
@@ -114,6 +115,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EssayQuestion.ascx.cs">
+      <DependentUpon>EssayQuestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EssayQuestion.ascx.designer.cs">
+      <DependentUpon>EssayQuestion.ascx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

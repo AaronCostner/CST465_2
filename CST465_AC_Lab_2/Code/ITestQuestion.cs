@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CST465_AC_Lab_2.Code
+namespace CST465_AC_Lab_2
 {
     public interface ITestQuestion
     {
