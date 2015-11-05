@@ -19,7 +19,10 @@ namespace CST465_AC_Lab_2
             
             set
             {
-                uxTextBox.Text = value;
+                if (uxTextBox != null)
+                {
+                    uxTextBox.Text = value;
+                }
             }
         }
 
@@ -32,7 +35,10 @@ namespace CST465_AC_Lab_2
 
             set
             {
-                lblTextBox.Text = value;
+                if (lblTextBox != null)
+                {
+                    lblTextBox.Text = value;
+                }
             }
         }
 
