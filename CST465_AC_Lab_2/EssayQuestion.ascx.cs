@@ -19,10 +19,7 @@ namespace CST465_AC_Lab_2
             
             set
             {
-                if (uxTextBox != null)
-                {
                     uxTextBox.Text = value;
-                }
             }
         }
 
@@ -35,10 +32,8 @@ namespace CST465_AC_Lab_2
 
             set
             {
-                if (lblTextBox != null)
-                {
-                    lblTextBox.Text = value;
-                }
+                lblTextBox.Text = value;
+                valTextBox.Text = value + " is required.";
             }
         }
 

@@ -56,5 +56,23 @@ namespace CST465_AC_Lab_2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::CST465_AC_Lab_2.ShortTextQuestion uxShortTextQuestionControl;
+        
+        /// <summary>
+        /// uxSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button uxSubmit;
+        
+        /// <summary>
+        /// uxSubmitLiteral control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal uxSubmitLiteral;
     }
 }

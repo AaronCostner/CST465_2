@@ -9,9 +9,9 @@ namespace CST465_AC_Lab_2
 {
     public class TrueFalseQuestion : CompositeControl, ITestQuestion
     {
-        private Label m_Label;
-        private RadioButtonList m_radioButtonList;
-        private RequiredFieldValidator m_valRadioButtonList;
+        private Label m_Label = new Label();
+        private RadioButtonList m_radioButtonList = new RadioButtonList();
+        private RequiredFieldValidator m_valRadioButtonList = new RequiredFieldValidator();
 
         public string Answer
         {
@@ -47,18 +47,15 @@ namespace CST465_AC_Lab_2
         protected override void CreateChildControls()
         {
             base.CreateChildControls();
-            m_Label = new Label();
             m_Label.ID = "lblRadioButtonList";
             m_Label.AssociatedControlID = "uxRadioButtonList";
             Controls.Add(m_Label);
 
-            m_radioButtonList = new RadioButtonList();
             m_radioButtonList.ID = "uxRadioButtonList";
             m_radioButtonList.Items.Add(new ListItem("True"));
             m_radioButtonList.Items.Add(new ListItem("False"));
             Controls.Add(m_radioButtonList);
 
-            m_valRadioButtonList = new RequiredFieldValidator();
             m_valRadioButtonList.ID = "valRadioButtonList";
             m_valRadioButtonList.ControlToValidate = "uxRadioButtonList";
             Controls.Add(m_valRadioButtonList);

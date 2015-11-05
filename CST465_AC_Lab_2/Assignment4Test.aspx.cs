@@ -13,5 +13,17 @@ namespace CST465_AC_Lab_2
         {
 
         }
+
+        protected void uxSubmit_Click(object sender, EventArgs e)
+        {
+            string string_literal = "";
+
+            string_literal += uxTFQuestionControl.QuestionText + "/" + uxTFQuestionControl.Answer + "//";
+            string_literal += uxMultQuestionControl.QuestionText + "/" + uxMultQuestionControl.Answer + "//";
+            string_literal += uxEssayQuestionControl.QuestionText + "/" + uxEssayQuestionControl.Answer + "//";
+            string_literal += uxShortTextQuestionControl.QuestionText + "/" + uxShortTextQuestionControl.Answer + "//";
+
+            uxSubmitLiteral.Text = string_literal;
+        }
     }
 }
