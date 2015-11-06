@@ -11,12 +11,15 @@ namespace CST465_AC_Lab_2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+     
         }
 
         protected void uxSubmit_Click(object sender, EventArgs e)
         {
             string string_literal = "";
+
+            Trace.Write("Your message to be written to the trace log.");
+            Trace.Write("Your message to be written to the trace log.");
 
             string_literal += uxTFQuestionControl.QuestionText + "/" + uxTFQuestionControl.Answer + "//";
             string_literal += uxMultQuestionControl.QuestionText + "/" + uxMultQuestionControl.Answer + "//";
