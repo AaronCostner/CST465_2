@@ -28,21 +28,21 @@
                     <br />
 
                 <asp:Label AssociatedControlID="v1FirstName" runat="server">First Name</asp:Label>
-                <asp:TextBox class="box" ID="v1FirstName" runat="server"></asp:TextBox>
+                <asp:TextBox CssClass="box" ID="v1FirstName" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="valFirstName" Text="*" ControlToValidate="v1FirstName"
                     ErrorMessage="First name is a required field." ForeColor="Red" runat="server"></asp:RequiredFieldValidator>
 
                 <br />
 
                 <asp:Label AssociatedControlID="v1LastName" runat="server">Last Name</asp:Label>
-                <asp:TextBox class="box" ID="v1LastName" runat="server"></asp:TextBox>
+                <asp:TextBox CssClass="box" ID="v1LastName" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="valLastName" Text="*" ControlToValidate="v1LastName"
                     ErrorMessage="Last name is a required field." ForeColor="Red" runat="server"></asp:RequiredFieldValidator>
 
                 <br />
 
                 <asp:Label AssociatedControlID="v1Age" runat="server">Age</asp:Label>
-                <asp:TextBox class="agebox" ID="v1Age" TextMode="Number" runat="server"></asp:TextBox>
+                <asp:TextBox CssClass="agebox" ID="v1Age" TextMode="Number" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="val2Age" ControlToValidate="v1Age" Text="*" ErrorMessage="Age is a required field."
                     ForeColor="Red" runat="server"></asp:RequiredFieldValidator>
                 <asp:RangeValidator ID="valAge" ControlToValidate="v1Age" Text="*" Type="Integer" MinimumValue="0" MaximumValue="200"
@@ -51,21 +51,21 @@
                 <br />
 
                 <asp:Label AssociatedControlID="v1PhoneNumber" runat="server">Phone Number</asp:Label>
-                <asp:TextBox class="box" ID="v1PhoneNumber" TextMode="Number" runat="server"></asp:TextBox>
+                <asp:TextBox CssClass="box" ID="v1PhoneNumber" TextMode="Number" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="valPhone" Text="*" ControlToValidate="v1PhoneNumber" ErrorMessage="Phone Number is a required field."
                     ForeColor="Red" runat="server"></asp:RequiredFieldValidator>
 
                 <br />
 
                 <asp:Label AssociatedControlID="v1Email" runat="server">Email Address</asp:Label>
-                <asp:TextBox class="addressbox" ID="v1Email" runat="server"></asp:TextBox>
+                <asp:TextBox CssClass="addressbox" ID="v1Email" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="valEmail" ControlToValidate="v1Email"
                     ErrorMessage="Email Address is a required field." Text="*" ForeColor="Red" runat="server"></asp:RequiredFieldValidator>
 
                 <br />
 
                 <asp:Label AssociatedControlID="v1EmailCompare" runat="server">Reenter Email Address</asp:Label>
-                <asp:TextBox class="addressbox" ID="v1EmailCompare" runat="server"></asp:TextBox>
+                <asp:TextBox CssClass="addressbox" ID="v1EmailCompare" runat="server"></asp:TextBox>
 
                 <asp:CompareValidator ID="valCompareEmails" ControlToValidate="v1Email" ControlToCompare="v1EmailCompare" Type="String" ErrorMessage="The emails do not match."
                     ForeColor="Red" Text="*" runat="server"></asp:CompareValidator>
@@ -73,12 +73,12 @@
                 <br />
 
                 <asp:Label AssociatedControlID="v1StreetAddress" runat="server">Street Address</asp:Label>
-                <asp:TextBox class="addressbox" ID="v1StreetAddress" runat="server"></asp:TextBox>
+                <asp:TextBox CssClass="addressbox" ID="v1StreetAddress" runat="server"></asp:TextBox>
 
                 <br />
 
                 <asp:Label AssociatedControlID="v1City" runat="server">City</asp:Label>
-                <asp:TextBox class="box" ID="v1City" runat="server"></asp:TextBox>
+                <asp:TextBox CssClass="box" ID="v1City" runat="server"></asp:TextBox>
 
                 <br />
 
@@ -92,7 +92,7 @@
                 <br />
 
                 <asp:Label AssociatedControlID="v1ZipCode" runat="server">Zip Code</asp:Label>
-                <asp:TextBox class="box" ID="v1ZipCode" runat="server"></asp:TextBox>
+                <asp:TextBox CssClass="box" ID="v1ZipCode" runat="server"></asp:TextBox>
 
                 <asp:RegularExpressionValidator ID="valZipCode" runat="server" Text="*" ErrorMessage="Please enter a zip code like #####-#### or #####"
                     ControlToValidate="v1ZipCode" ValidationExpression="\d{5}(\-\d{4})?" ForeColor="Red"></asp:RegularExpressionValidator>
@@ -115,31 +115,31 @@
 
                     <br />
                 <strong>First Name</strong>
-                <asp:Label ID="v2FirstName" runat="server" ReadOnly="true"></asp:Label>
+                <asp:Label ID="v2FirstName" runat="server"></asp:Label>
                 <br />
                 <strong>Last Name</strong>
-                <asp:Label ID="v2Lastname" runat="server" ReadOnly="true"></asp:Label>
+                <asp:Label ID="v2Lastname" runat="server"></asp:Label>
                 <br />
                 <strong>Age</strong>
-                <asp:Label ID="v2Age" runat="server" ReadOnly="true"></asp:Label>
+                <asp:Label ID="v2Age" runat="server"></asp:Label>
                 <br />
                 <strong>Phone Number</strong>
-                <asp:Label ID="v2PhoneNumber" runat="server" ReadOnly="true"></asp:Label>
+                <asp:Label ID="v2PhoneNumber" runat="server"></asp:Label>
                 <br />
                 <strong>Email Address</strong>
-                <asp:Label ID="v2Email" runat="server" ReadOnly="true"></asp:Label>
+                <asp:Label ID="v2Email" runat="server"></asp:Label>
                 <br />
                 <strong>Street Address</strong>
-                <asp:Label ID="v2StreetAddress" runat="server" ReadOnly="true"></asp:Label>
+                <asp:Label ID="v2StreetAddress" runat="server"></asp:Label>
                 <br />
                 <strong>City</strong>
-                <asp:Label ID="v2City" runat="server" ReadOnly="true"></asp:Label>
+                <asp:Label ID="v2City" runat="server"></asp:Label>
                 <br />
                 <strong>State</strong>
-                <asp:Label ID="v2State" runat="server" ReadOnly="true"></asp:Label>
+                <asp:Label ID="v2State" runat="server"></asp:Label>
                 <br />
                 <strong>Zip Code</strong>
-                <asp:Label ID="v2ZipCode" runat="server" ReadOnly="true"></asp:Label>
+                <asp:Label ID="v2ZipCode" runat="server"></asp:Label>
                 <br />
 
                 <asp:Image ID="uxImage" runat="server" />
