@@ -1,6 +1,8 @@
-﻿div{
+﻿div#pageBody{
     width: 1004px;
-
+    margin:0 auto;
+    background-color:white;
+    position: relative;
 }
 
 label {
