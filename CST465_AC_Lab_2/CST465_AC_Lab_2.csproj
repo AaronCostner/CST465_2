@@ -69,6 +69,7 @@
     <Content Include="404Error.aspx" />
     <Content Include="500Error.aspx" />
     <Content Include="Assignment4Test.aspx" />
+    <Content Include="Blog.aspx" />
     <Content Include="css\DefaultStyles.css" />
     <Content Include="Customers\Login.aspx" />
     <Content Include="Customers\Register.aspx" />
@@ -117,6 +118,13 @@
     </Compile>
     <Compile Include="Assignment4Test.aspx.designer.cs">
       <DependentUpon>Assignment4Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
     </Compile>
     <Compile Include="Code\ITestQuestion.cs" />
     <Compile Include="Code\ShortTextQuestion.cs" />
