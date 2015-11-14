@@ -40,6 +40,15 @@ namespace CST465_AC_Lab_2 {
         protected global::System.Web.UI.HtmlControls.HtmlForm baseForm;
         
         /// <summary>
+        /// siteMapDataSourceItem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SiteMapDataSource siteMapDataSourceItem;
+        
+        /// <summary>
         /// loginStatus1 control.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,24 @@ namespace CST465_AC_Lab_2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder HeaderContentPlaceHolder;
+        
+        /// <summary>
+        /// websiteMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Menu websiteMenu;
+        
+        /// <summary>
+        /// websiteSiteMapPath control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SiteMapPath websiteSiteMapPath;
         
         /// <summary>
         /// NavContentPlaceHolder control.

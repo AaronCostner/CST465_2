@@ -16,6 +16,12 @@ label {
     height: 15px;
 }
 
+.menu {
+    color: #FFCF00;
+    font-family: 'Bookman Old Style';
+    background-color: #CA8300;
+}
+
 .agebox {
     display: inline-block;
     width: 25px;
