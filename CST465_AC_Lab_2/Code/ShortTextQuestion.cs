@@ -22,6 +22,7 @@ namespace CST465_AC_Lab_2
             m_Label.ID = "lblTextBox";
             m_Label.AssociatedControlID = "uxTextBox";
             m_Label.Text = QuestionText;
+            m_Label.Width = 600;
 
             Controls.Add(m_Label);
 

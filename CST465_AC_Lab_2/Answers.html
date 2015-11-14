@@ -1,0 +1,316 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="css/DefaultStyles.css" rel="stylesheet" type="text/css" />
+    <title>
+        Boardom
+    </title>
+    <link rel="stylesheet" href="../css/DefaultStyles.css" type="text/css" />
+
+    <style type="text/css">
+        /* <![CDATA[ */
+        #websiteMenu img.icon {
+            border-style: none;
+            vertical-align: middle;
+        }
+
+        #websiteMenu img.separator {
+            border-style: none;
+            display: block;
+        }
+
+        #websiteMenu img.horizontal-separator {
+            border-style: none;
+            vertical-align: middle;
+        }
+
+        #websiteMenu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: auto;
+        }
+
+            #websiteMenu ul.dynamic {
+                z-index: 1;
+            }
+
+        #websiteMenu a {
+            text-decoration: none;
+            white-space: nowrap;
+            display: block;
+        }
+
+            #websiteMenu a.static {
+                padding-left: 0.15em;
+                padding-right: 0.15em;
+            }
+
+            #websiteMenu a.popout {
+                background-image: url("/WebResource.axd?d=YAYach_zykzn7tRotFpEUqZCFA81UhdhN5EUkIEODbeQ4LXD77GUTRGWdJaeVW2K2lY80gM4pNyBFi3UiVKmtqaXZX77E0sF0z-q-j1zQYw1&t=635802794369941133");
+                background-repeat: no-repeat;
+                background-position: right center;
+                padding-right: 14px;
+            }
+        /* ]]> */
+    </style>
+</head>
+<body>
+    <div>
+        <form method="post" action="Results.aspx" id="baseForm">
+            <div class="aspNetHidden">
+                <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+                <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+            </div>
+
+            <script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['baseForm'];
+if (!theForm) {
+    theForm = document.baseForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+            </script>
+
+
+
+            <script src="/WebResource.axd?d=fqV81KWLWhVg-lLAb4IT60FSWBfNzt5Dqakg_lzmSfqF7V7T9h2SN4kHaQjNhlXWVd3jFQ8TOj3mUgB5Dt44rw3hvTua3fpmemxu8Y0YQKI1&amp;t=635802794369941133" type="text/javascript"></script>
+
+            <div id="pageBody">
+                <div style="position: absolute; right: 0; top: 0;">
+                    <a id="loginStatus1" href="javascript:__doPostBack(&#39;ctl00$loginStatus1$ctl02&#39;,&#39;&#39;)">Login</a>
+                </div>
+                <header></header>
+
+                <h1>Boardom</h1>
+
+                <a href="#websiteMenu_SkipLink" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip Navigation Links</a><div class="menu" id="websiteMenu">
+                    <ul class="level1">
+                        <li><a title="The page describing what the company is about." class="level1" href="/About.aspx">About</a></li>
+                        <li><a title="The page that holds the means to communicate with the company." class="level1" href="/Contact.aspx">Contact</a></li>
+                        <li><a title="The page that has the company&#39;s products." class="level1" href="/Products.aspx">Products</a></li>
+                        <li><a title="The company&#39;s blog posting page." class="level1" href="/Blog.aspx">Blog</a></li>
+                    </ul>
+                </div><a id="websiteMenu_SkipLink"></a>
+                <span id="websiteSiteMapPath"><a href="#websiteSiteMapPath_SkipLink" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip Navigation Links</a><a id="websiteSiteMapPath_SkipLink"></a></span>
+                <nav>
+
+
+
+                </nav>
+
+                <main>
+
+
+                </main>
+
+
+
+                <strong>HTTP is a stateless protocol.</strong>
+                <br />
+                True
+                <br />
+                <br />
+
+                <strong>SessionState can be transferred between pages.</strong>
+                <br />
+                True
+                <br />
+                <br />
+
+                <strong>Sanitizing database inputs is only important for sites handling sensitive information</strong>
+                <br />
+                False
+                <br />
+                <br />
+
+                <strong>ViewState can be transferred between pages.</strong>
+                <br />
+                False
+                <br />
+                <br />
+
+                <strong>Cookies can be transferred between pages.</strong>
+                <br />
+                True
+                <br />
+                <br />
+
+                <strong>It is a good practice to use inline CSS styles.</strong>
+                <br />
+                True
+                <br />
+                <br />
+
+                <strong>All controls in ASP.NET support DataBinding.</strong>
+                <br />
+                False
+                <br />
+                <br />
+
+                <strong>Browsers must support ASP.NET in order to display pages created with it.</strong>
+                <br />
+                True
+                <br />
+                <br />
+
+                <strong>When a MasterPage is used, a page wraps its own content with the MasterPage's content.</strong>
+                <br />
+                True
+                <br />
+                <br />
+
+                <strong>&ltdeny&gt authorization rules in the web.config are processed first regardless of the way the rules are ordered.</strong>
+                <br />
+                False
+                <br />
+                <br />
+
+                <strong>Place the following events in order of when they occur in the page lifecycle: Load, Init, Request Arrives, PreRender, Load ViewState, Input Control Event Handling</strong>
+                <br />
+                Request Arrives, Init, Load, PreRender, Load ViewState, then Input Control Event Handling.
+                <br />
+                <br />
+
+                <strong>What is the purpose of the doctype declaration at the top of a web page?</strong>
+                <br />
+                The purpose is to determine how to interpret the code to follow.  Interpreting HTML code might be different from PHP or other DOC TYPES.
+                <br />
+                <br />
+
+                <strong>What is the order of precedence for the same style defined in the following ways? Style tag in document head, External Style Sheet referenced by the link tag in document head</strong>
+                <br />
+                Style tag in the document head, then External Style Sheet referenced by the link tag in document head.
+                <br />
+                <br />
+
+                <strong>What is the order of precedence for CSS for referencing elements in the following ways: By Element Name, By ID, By CSS Class, Inline using the style=&quot&quot attribute.</strong>
+                <br />
+                By ID, By CSS Class, By Element Name, then Inline using the style="" attribute.
+                <br />
+                <br />
+
+                <strong>Explain why the alt attribute of the img tag is important.</strong>
+                <br />
+                In case the image doesn't come through, we have an alternative item to show.  This also helps with programs that read webpages to blind individuals.
+                <br />
+                <br />
+
+                <strong>What is the purpose of name mangling?</strong>
+                <br />
+                It helps us distinguish between multiple items that may have the same name without the need to go out of our way to make them completely unique from one another.
+                <br />
+                <br />
+
+                <strong>Explain the difference between redirects that use a 301 HTTP status code and ones that use a 302 HTTP status code.</strong>
+                <br />
+                301 means that the page moved permanently, and that you shouldn't come back to this page, whereas 302 means the page has been moved temporarily, and to try this link again in the future.
+                <br />
+                <br />
+
+                <strong>HTML stands for:</strong>
+                <br />
+                3
+                <br />
+                <br />
+
+                <strong>All controls that ask for user input should have an associated</strong>
+                <br />
+                1
+                <br />
+                <br />
+
+                <strong>The living version of a page within the web browser is called the</strong>
+                <br />
+                2
+                <br />
+                <br />
+
+                <strong>Which of the following elements is most appropriate for presenting the user with a list of items in no particular order?</strong>
+                <br />
+                2
+                <br />
+                <br />
+
+                <strong>What is the difference between the ViewStateMode and EnableViewState properties in the <%@ Page %> declaration?</strong>
+                <br />
+                1
+                <br />
+                <br />
+
+                <strong>The line of text that tells a SqlDataSource how to connect to the database is called a _____</strong>
+                <br />
+                ConnectionString
+                <br />
+                <br />
+
+                <strong>When a WebForms page performs a POST operation to itself it is referred to as a _____</strong>
+                <br />
+                Post Back
+                <br />
+                <br />
+
+                <strong>The term for loading  controls data from a data source is ______</strong>
+                <br />
+                DataBinding
+                <br />
+                <br />
+
+                <strong>An example of a block element is _____</strong>
+                <br />
+                div
+                <br />
+                <br />
+
+                <strong>An example of an inline element is _____</strong>
+                <br />
+                span
+                <br />
+                <br />
+
+                <strong>What is the name of the file that stores configuration information for a website? _____</strong>
+                <br />
+                web.config
+                <br />
+                <br />
+
+                <strong>A div with the following CSS will have what computed height and width? { margin: 0 0 5px; padding: 5px 10px; height: 100px; width: 50px; border-left: solid 3px #0c0; } _________</strong>
+                <br />
+                Height of 115px, Width of 73px
+                <br />
+                <br />
+
+
+                <footer></footer>
+            </div>
+
+            <div class="aspNetHidden">
+
+                <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="63301E89" />
+                <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="jy5VzRipuGW47BGqL8MGwDq+SGRDXpb/YaiTmksmNRu33pCab5gbaiYlS+n5ef1Dv4IK++ufncPV83izTk1JzG4BT+oeTVM4Emgr6ww4UGxsAbFVedBPsHeyW9DV07EJ" />
+            </div>
+            <script type='text/javascript'>new Sys.WebForms.Menu({ element: 'websiteMenu', disappearAfter: 500, orientation: 'horizontal', tabIndex: 0, disabled: false });</script>
+        </form>
+    </div>
+
+    <!-- Visual Studio Browser Link -->
+    <script type="application/json" id="__browserLink_initializationData">
+        {"appName":"Chrome","requestId":"a1986f5d238c489baca8365322b58ce0"}
+    </script>
+    <script type="text/javascript" src="http://localhost:59729/e6a9a092a02f4b31a174f2f1c4767715/browserLink" async="async"></script>
+    <!-- End Browser Link -->
+
+</body>
+</html>
