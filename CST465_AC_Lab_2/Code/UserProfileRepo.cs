@@ -21,35 +21,45 @@ namespace CST465_AC_Lab_2
             UserProfileBO ret_user = new UserProfileBO();
 
             command.Parameters.Add(new SqlParameter("@UserId", id_passed));
-
-            connection.Open();
-
-            SqlDataReader reader = command.ExecuteReader();
-            
-            if(reader.Read())
+            try
             {
-                ret_user.UserID = (Guid)reader[0];
-                ret_user.firstName = (string)reader[1];
-                ret_user.lastName = (string)reader[2];
-                ret_user.age = (string)reader[3];
-                ret_user.phoneNumber = (string)reader[4];
-                ret_user.emailAddress = (string)reader[5];
-                ret_user.streetAddress = (string)reader[6];
-                ret_user.city = (string)reader[7];
-                ret_user.state = (string)reader[8];
-                ret_user.zipCode = (string)reader[9];
+                connection.Open();
 
-                if(reader[10] != System.DBNull.Value)
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
                 {
-                    ret_user.profileImage = (byte[])reader[10];
-                }
-                else
-                {
-                    ret_user.profileImage = null;
+                    ret_user.UserID = (Guid)reader[0];
+                    ret_user.firstName = (string)reader[1];
+                    ret_user.lastName = (string)reader[2];
+                    ret_user.age = reader[3].ToString();
+                    ret_user.phoneNumber = (string)reader[4];
+                    ret_user.emailAddress = (string)reader[5];
+                    ret_user.streetAddress = (string)reader[6];
+                    ret_user.city = (string)reader[7];
+                    ret_user.state = (string)reader[8];
+                    ret_user.zipCode = (string)reader[9];
+
+                    if (reader[10] != System.DBNull.Value)
+                    {
+                        ret_user.profileImage = (byte[])reader[10];
+                    }
+                    else
+                    {
+                        ret_user.profileImage = null;
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Close();
+            }
 
-            connection.Close();
+
 
             return ret_user;
         }
@@ -75,11 +85,20 @@ namespace CST465_AC_Lab_2
             command.Parameters.Add(new SqlParameter("@ZipCode", user.zipCode));
             command.Parameters.Add(new SqlParameter("@ProfileImage", user.profileImage));
 
-            connection.Open();
+            try
+            {
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Close();
+            }
 
-            command.ExecuteNonQuery();
-
-            connection.Close();
         }
     }
 }

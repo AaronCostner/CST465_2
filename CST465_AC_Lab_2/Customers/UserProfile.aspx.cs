@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.IO;
 using System.Data.SqlClient;
+using System.Web.Security;
 
 namespace CST465_AC_Lab_2
 {
@@ -17,12 +18,17 @@ namespace CST465_AC_Lab_2
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Session != null && Session["ProfileData"] != null)
+            if(Session != null)// && Session["ProfileData"] != null)
             {
 
                 uxMultiView.ActiveViewIndex = 1;
 
-                userBusinessObject = Session["ProfileData"] as UserProfileBO;
+                //userBusinessObject = Session["ProfileData"] as UserProfileBO;
+
+                MembershipUser user = Membership.GetUser();
+                Guid userID = (Guid)user.ProviderUserKey;
+
+                userBusinessObject = UserProfileRepo.getUserProfile(userID);
 
                 v2FirstName.Text = userBusinessObject.firstName;
                 v2Lastname.Text = userBusinessObject.lastName;
@@ -56,6 +62,11 @@ namespace CST465_AC_Lab_2
             {
                 userBusinessObject = new UserProfileBO();
 
+                MembershipUser user = Membership.GetUser();
+                Guid userID = (Guid)user.ProviderUserKey;
+
+                userBusinessObject.UserID = userID;
+
                 userBusinessObject.firstName = v1FirstName.Text;
                 userBusinessObject.lastName = v1LastName.Text;
                 userBusinessObject.age = v1Age.Text;
@@ -74,8 +85,10 @@ namespace CST465_AC_Lab_2
                     userBusinessObject.profileImage = buffer;
                 }
 
-                Session["ProfileData"] = userBusinessObject;
 
+                UserProfileRepo.saveUserProfile(userBusinessObject);
+                //Session["ProfileData"] = userBusinessObject;
+                uxMultiView.ActiveViewIndex = 1;
                 Response.Redirect("UserProfile.aspx");
 
             }
@@ -93,6 +106,12 @@ namespace CST465_AC_Lab_2
             {
                 args.IsValid = true;
             }
+        }
+
+        protected void editBtn_Click(object sender, EventArgs e)
+        {
+            uxMultiView.ActiveViewIndex = 0;
+            //Response.Redirect("UserProfile.aspx");
         }
     }
 }

@@ -141,7 +141,7 @@
                 <strong>Zip Code</strong>
                 <asp:Label ID="v2ZipCode" runat="server"></asp:Label>
                 <br />
-
+                <asp:Button ID="editBtn" runat="server" Text="Edit Profile" OnClick="editBtn_Click"/>
                 <asp:Image ID="uxImage" runat="server" />
             </asp:View>
         </asp:MultiView>
