@@ -18,5 +18,6 @@ namespace CST465_AC_Lab_2
         public string state = "";
         public string zipCode = "";
         public byte[] profileImage = { };
+        public Guid UserID { get; set; }
     }
 }

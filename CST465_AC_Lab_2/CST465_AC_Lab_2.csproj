@@ -154,6 +154,7 @@
     <Compile Include="Code\ShortTextQuestion.cs" />
     <Compile Include="Code\TrueFalseQuestion.cs" />
     <Compile Include="Code\UserProfileBO.cs" />
+    <Compile Include="Code\UserProfileRepo.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
