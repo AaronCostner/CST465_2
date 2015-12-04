@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta name="viewport" content="width=100%, max-width=device-width, min-width=320px, initial-scale=1.0" />
     <link href="../css/DefaultStyles.css" rel="stylesheet" type="text/css" />
     <title>Boardom</title>
     <asp:ContentPlaceHolder ID="Stylesheets" runat="server">
@@ -15,6 +16,8 @@
 <body>
     <div>
         <form id="baseForm" runat="server">
+            <asp:ScriptManager ID="uxScriptManager" runat="server">
+            </asp:ScriptManager>
             <asp:SiteMapDataSource ID="siteMapDataSourceItem" StartingNodeUrl="~/Default.aspx" ShowStartingNode="false" runat="server" />
             <div id="pageBody">
                 <div style="position: absolute; right: 0; top: 0;" runat="server">
@@ -27,12 +30,12 @@
 
                 <h1>Boardom</h1>
 
-                <asp:Menu CssClass="menu" Orientation="Horizontal" ID="websiteMenu" DataSourceID="siteMapDataSourceItem"  runat="server"></asp:Menu>
+                <asp:Menu CssClass="menu" Orientation="Horizontal" ID="websiteMenu" DataSourceID="siteMapDataSourceItem" runat="server"></asp:Menu>
                 <asp:SiteMapPath ID="websiteSiteMapPath" PathSeparator=" | " runat="server"></asp:SiteMapPath>
                 <nav>
                     <asp:ContentPlaceHolder ID="NavContentPlaceHolder" runat="server">
                     </asp:ContentPlaceHolder>
-                
+
                 </nav>
 
                 <main>

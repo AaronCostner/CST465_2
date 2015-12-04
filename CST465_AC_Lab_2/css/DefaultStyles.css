@@ -1,8 +1,10 @@
 ﻿div#pageBody{
-    width: 1004px;
+    width: 100%;
     margin:0 auto;
     background-color:white;
     position: relative;
+    max-width: 1004px;
+    min-width: 320px;
 }
 
 label {
@@ -14,6 +16,16 @@ label {
     display: inline-block;
     width: 100px;
     height: 15px;
+}
+
+.col{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.contact{
+    background-color: #FFE15E;
 }
 
 .menu {
@@ -50,6 +62,18 @@ header {
 
 footer {
     color: #FFC600;
+}
+
+@media (min-width: 768px){
+    .col_25 {
+        width: 25%;
+        float: left;
+    }
+
+    .col_75 {
+        width: 75%;
+        float: left;
+    }
 }
 
 /* CSS - Cascading Style Sheet */
