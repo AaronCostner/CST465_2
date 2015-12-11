@@ -1,6 +1,12 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/App_Master/BaseTemplate.Master" CodeBehind="Default.aspx.cs" Inherits="CST465_AC_Lab_2.Default" %>
+<%@ Register TagPrefix="CST465" Assembly="CST465_AC_Lab_2" Namespace="CST465_AC_Lab_2" %>
+<%@ Register TagPrefix="CSET" TagName="MultChoice" Src="~/MultipleChoiceQuestion.ascx" %>
+<%@ Register TagPrefix="CSET" TagName="Featured" Src="~/FeaturedProducts.ascx" %>
 
 <asp:Content ID="ContentBody" ContentPlaceHolderID="BodyContentPlaceHolder" runat="server">
+            <CSET:Featured ID="products" runat="server"/>
+            <br />
+            <br />
             <asp:Label AssociatedControlID="uxName" runat="server">Name</asp:Label>
             <asp:TextBox ID="uxName" TextMode="MultiLine" BackColor="YellowGreen" runat="server">Aaron Costner</asp:TextBox>
 

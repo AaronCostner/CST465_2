@@ -7,19 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CST465_AC_Lab_2 {
+namespace CST465_AC_Lab_2.Admin {
     
     
-    public partial class Products {
-        
-        /// <summary>
-        /// featuredUserControl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::CST465_AC_Lab_2.FeaturedProducts featuredUserControl;
+    public partial class ManageProducts {
         
         /// <summary>
         /// dsProducts control.
@@ -31,12 +22,21 @@ namespace CST465_AC_Lab_2 {
         protected global::System.Web.UI.WebControls.SqlDataSource dsProducts;
         
         /// <summary>
-        /// uxAllProductsRepeater control.
+        /// formView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater uxAllProductsRepeater;
+        protected global::System.Web.UI.WebControls.FormView formView;
+        
+        /// <summary>
+        /// uxProducts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView uxProducts;
     }
 }
